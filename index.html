@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Design Studio</title>
+    <link rel="stylesheet" href="index-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--navbar section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">TDS</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links"> About </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Hero section-->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>THE DESIGN STUDIO</h1>
+          <!--<h2>All things design</h2>-->
+          <p>We design mental decluttering solutions.</p>
+          <button class="main__btn">
+            <a href="#our-services">Get Started</a>
+          </button>
+        </div>
+        <div class="main_img--container">
+          <img src="images/pic1.svg" alt="pic" id="main__img" />
+        </div>
+      </div>
+    </div>
+
+    <!--Services Section-->
+    <div class="services">
+      <h1 id="our-services">OUR SERVICES</h1>
+      <div class="services-grid">
+        <div class="services-card">
+          <h3>UI/UX Audit</h3>
+          <p>
+            Stop guessing where your users are leaving. A data-backed look under
+            the hood to find the friction points costing you conversions.
+          </p>
+          <img src="images/uiux.svg" alt="UI UX Audit Service">
+        </div>
+        <div class="services-card">
+          <h3>Product Design</h3>
+          <p>
+            Built for people, not just screens. We bridge the gap between
+            complex ideas and intuitive tools that your users will actually love
+            using.
+          </p>
+          <img src="images/product.svg" alt="Product Design Service">
+        </div>
+        <div class="services-card">
+          <h3>Graphic Design</h3>
+          <p>
+            Visuals that speak, so you don’t have to. Clean, intentional
+            branding that turns heads and builds trust at first glance.
+          </p>
+          <img src="images/graphic.svg" alt="Graphic Design Service">
+        </div>
+      </div>
+      <h2 id="check-blog"><a href="#blogies">Check out our blogs!</a></h2>
+    </div>
+
+    <!--Blog section-->
+    <div class="blog__container" id="blogies">
+      <h1>KNOWLEDGE SHARE</h2>
+        <div class="blog__grid">
+          <div class="blog__card">
+            <div class="blog__img">
+            <img src="images\uiux.svg" alt="">
+        </div>
+        <div class="blog__text">
+          <h2>The Future of design: Intentional</h2>
+          <p>Exploring how products designed intentially over vibes helps businesses retain users</p>
+          <button class="open-modal" data-target="blog-content-1">Read More</button>
+        </div>
+      </div>
+      <div class="blog__card">
+        <div class="blog__img">
+          <img src="images\pic1.svg" alt="">
+        </div>
+        <div class="blog__text">
+          <h2>The Future of design: Intentional</h2>
+          <p>Exploring how products designed intentially over vibes helps businesses retain users</p>
+          <button class="open-modal" data-target="blog-content-2">Read More</button>
+        </div>
+      </div>
+      <div class="blog__card">
+        <div class="blog__img">
+          <img src="images\product.svg" alt="">
+        </div>
+        <div class="blog__text">
+          <h2>The Future of design: Intentional</h2>
+          <p>Exploring how products designed intentially over vibes helps businesses retain users</p>
+          <button class="open-modal" data-target="blog-content-3">Read More</button>
+        </div>
+      </div>
+                <div class="blog__card">
+            <div class="blog__img">
+            <img src="images\uiux.svg" alt="">
+        </div>
+        <div class="blog__text">
+          <h2>The Future of design: Intentional</h2>
+          <p>Exploring how products designed intentially over vibes helps businesses retain users</p>
+          <button class="open-modal" data-target="blog-content-1">Read More</button>
+        </div>
+      </div>
+      <div class="blog__card">
+        <div class="blog__img">
+          <img src="images\pic1.svg" alt="">
+        </div>
+        <div class="blog__text">
+          <h2>The Future of design: Intentional</h2>
+          <p>Exploring how products designed intentially over vibes helps businesses retain users</p>
+          <button class="open-modal" data-target="blog-content-2">Read More</button>
+        </div>
+      </div>
+      <div class="blog__card">
+        <div class="blog__img">
+          <img src="images\product.svg" alt="">
+        </div>
+        <div class="blog__text">
+          <h2>The Future of design: Intentional</h2>
+          <p>Exploring how products designed intentially over vibes helps businesses retain users</p>
+          <button class="open-modal" data-target="blog-content-3">Read More</button>
+        </div>
+      </div>
+          
+        </div>
+      
+    </div>
+
+    <div id="blogModal" class="modal">
+      <div class="modal__content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-body"></div>
+
+      </div>
+    </div>
+
+    <!--blog contents here-->
+    <div style="display: none;">
+
+      <div id="blog-content-1">
+        
+        <h2>The Future of Design</h2>
+        <div style="display: flex; gap: 10px; margin-top: 20px;">
+          <div style="flex: 1;"><strong>Insight A:</strong> Intentionality.</div>
+          <div style="flex: 1;"><strong>Insight B:</strong> Human-centric.</div>
+        </div>
+        <img src="images/graphic.svg" style="width:auto; height: auto; border-radius:10px;">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies sem tortor, ut egestas dolor dignissim eget. Quisque tincidunt, elit eget vestibulum pulvinar, arcu augue dapibus dolor, vel molestie sapien velit ac dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus tristique enim odio, vel imperdiet enim rhoncus id. Aenean venenatis mattis nisi, id tempor dolor molestie eget. Integer aliquam efficitur magna vitae tempor. Sed a lacus bibendum, malesuada metus sit amet, commodo purus. Phasellus augue metus, pharetra ac lobortis id, mattis a eros. Ut convallis mollis tincidunt. Ut scelerisque magna in ipsum malesuada, et vestibulum mauris mollis. Curabitur ut tincidunt elit. Integer tempor lacinia nulla eget convallis. Cras id sapien eu nunc vulputate sodales. Curabitur tristique ligula libero, quis pretium ex ullamcorper bibendum. In eu est sed nisi luctus sollicitudin id ac nunc.
+
+Sed porta eros quis mauris venenatis auctor. Nunc nec molestie turpis, vel rutrum sapien. Nam sodales vel dolor ut egestas. Mauris eu lectus ac eros blandit sagittis id a felis. Sed et nisi sagittis, blandit turpis eget, sagittis ipsum. Aenean elementum urna nulla, vel aliquam libero sagittis congue. Aenean egestas erat nec porttitor tempor. Aenean congue, lorem non tristique efficitur, tellus nisl volutpat elit, ut congue purus nisl sed purus. Nullam non vulputate dui. Aliquam elementum ornare imperdiet. Nulla ac sem vel erat hendrerit sagittis et id risus. Suspendisse lacinia tellus quis lectus vestibulum, id suscipit felis ultrices. Donec aliquet tincidunt porttitor. </p>
+      </div>
+
+      <div id="blog-content-2">
+        <h2>UI/UX Audit Benefits</h2>
+        <ul>
+          <li>Higher Conversion</li>
+          <li>Better Retention</li>
+          <li>Less Friction</li>
+        </ul>
+        <p>More scrollable text here...</p>
+      </div>
+
+</div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
