@@ -125,21 +125,28 @@ h2 {
 
 /*Hero section- About*/
 .hero {
-  padding: 40px;
+  
   min-height: 500px;
   text-align: center;
+}
+
+.hero h2{
+  font-size: 1.10rem;
 }
 
 .hero img {
   display: block;
   margin: auto;
+  padding-bottom: 30px;
   width: 50%;
   height: 50%;
+
 }
 #heading{
-  font-size: 2rem;
-  margin-top: -30px;
-  margin-bottom: 20vh;
+  font-size: 4rem;
+  padding: 20px;
+  margin-top: 10px;
+  
 }
 
 /*Why Us Section*/

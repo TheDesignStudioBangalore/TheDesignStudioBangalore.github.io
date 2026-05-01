@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #111111;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar__logo {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.fa-gem {
+  margin-right: 0.5rem;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #f77062;
+  color: #fff;
+}
+
+.button:hover {
+  background: #4837ff;
+  transition: all 0.2s ease;
+}
+
+.navbar__links:hover {
+  color: #f77062;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:active {
+  color: #f77062;
+}
+
+.Contact__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Contact__hero h2 {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 200;
+  padding-bottom: 40px;
+}
+#heading {
+  font-size: 4rem;
+  padding: 20px;
+  margin-top: 10px;
+}
+.contact-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-type h1 {
+  font-size: 1.5rem;
+  color: #f77062;
+  padding: 5px;
+}
+
+.contact-type h2{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+/* Form Container Styling */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form on the page */
+    text-align: left; /* Aligns labels to the left inside the centered form */
+    padding: 20px;
+}
+
+/* Matching the "Our Process" List Item style for form groups */
+.form-group {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Elegant Inputs with the Groove Border */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background: transparent;
+    color: #fff;
+    padding: 15px;
+    border: 3px groove #fff; /* Matching your .the-process ul li style */
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #f77062;
+}
+
+/* Checkbox Section Styling */
+.checkbox-group {
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: 40px auto; /* Centered like your process images */
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: all 0.35s;
+}
