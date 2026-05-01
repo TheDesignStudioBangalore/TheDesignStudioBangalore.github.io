@@ -109,6 +109,104 @@ html {
 .navbar__links:active {
   color: #f77062;
 }
+@media screen and (max-width: 960px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+    background: #131313;
+  }
+
+  .navbar__menu.active {
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+  }
+
+  #navbar__logo {
+    padding-left: 25px;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3 ease-in-out;
+    background-color: #fff;
+  }
+
+  .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .navbar__btn {
+    padding-bottom: 2rem;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+  }
+
+  .navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  #heading {
+    font-size: 0.5rem;
+    padding: 20px;
+    margin-top: 10px;
+  }
+}
+
+/* Content hero CSS */
 
 .Contact__hero {
   display: flex;
@@ -124,14 +222,14 @@ html {
   padding-bottom: 40px;
 }
 #heading {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 20px;
   margin-top: 10px;
 }
-.contact-type{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-type h1 {
   font-size: 1.5rem;
@@ -139,31 +237,31 @@ html {
   padding: 5px;
 }
 
-.contact-type h2{
-    font-size: 1rem;
-    padding: 10px;
+.contact-type h2 {
+  font-size: 1rem;
+  padding: 10px;
+  font-weight: 200;
 }
-
 
 /* Form Container Styling */
 #contact-form {
-    max-width: 600px;
-    margin: 0 auto; /* Centers the form on the page */
-    text-align: left; /* Aligns labels to the left inside the centered form */
-    padding: 20px;
+  max-width: 600px;
+  margin: 0 auto; /* Centers the form on the page */
+  text-align: left; /* Aligns labels to the left inside the centered form */
+  padding: 20px;
 }
 
 /* Matching the "Our Process" List Item style for form groups */
 .form-group {
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group label {
-    font-weight: 500;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 /* Elegant Inputs with the Groove Border */
@@ -171,55 +269,56 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    background: transparent;
-    color: #fff;
-    padding: 15px;
-    border: 3px groove #fff; /* Matching your .the-process ul li style */
-    border-radius: 4px;
-    font-family: inherit;
-    font-size: 1rem;
-    outline: none;
-    transition: 0.3s ease-in-out;
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  border: 3px groove #fff; /* Matching your .the-process ul li style */
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease-in-out;
 }
 
-input:focus, textarea:focus {
-    border-color: #f77062;
+input:focus,
+textarea:focus {
+  border-color: #f77062;
 }
 
 /* Checkbox Section Styling */
 .checkbox-group {
-    padding: 15px;
-    border: 1px solid #333;
-    border-radius: 4px;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 4px;
 }
 
 .checkbox-group input[type="checkbox"] {
-    margin-right: 10px;
-    cursor: pointer;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .checkbox-group label {
-    font-weight: 300;
-    font-size: 1rem;
-    cursor: pointer;
+  font-weight: 300;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 /* Submit Button Styling */
 button[type="submit"] {
-    display: block;
-    width: 200px;
-    height: 60px;
-    margin: 40px auto; /* Centered like your process images */
-    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    color: #fff;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.35s;
+  display: block;
+  width: 200px;
+  height: 60px;
+  margin: 40px auto; /* Centered like your process images */
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.35s;
 }
 
 button[type="submit"]:hover {
-    transform: scale(1.1);
-    transition: all 0.35s;
+  transform: scale(1.1);
+  transition: all 0.35s;
 }

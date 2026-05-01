@@ -112,41 +112,45 @@ html {
 h1 {
   text-align: center;
   font-size: 2rem;
-  padding: 10px;
+  
 }
 h2 {
   text-align: justify;
   text-align-last: center;
   font-size: 1rem;
-  padding: 10px;
+  
   width: 50%;
   margin: 0 auto;
 }
 
 /*Hero section- About*/
 .hero {
-  
   min-height: 500px;
   text-align: center;
 }
 
-.hero h2{
-  font-size: 1.10rem;
+.hero h1{
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 200;
+  padding-bottom: 40px;
+}
+
+.hero h2 {
+  font-size: 1.1rem;
 }
 
 .hero img {
   display: block;
   margin: auto;
-  padding-bottom: 30px;
+  padding: 30px;
   width: 50%;
   height: 50%;
-
 }
-#heading{
-  font-size: 4rem;
+#heading {
+  font-size: 3rem;
   padding: 20px;
   margin-top: 10px;
-  
 }
 
 /*Why Us Section*/
@@ -157,6 +161,7 @@ h2 {
 }
 .why-us img {
   display: block;
+  padding-top:30px ;
   margin: auto;
   width: 50%;
   height: 50%;
@@ -183,7 +188,7 @@ h2 {
   text-decoration: solid;
   padding: 20px 80px 20px;
   margin: 40px;
-  border-style:groove;
+  border-style: groove;
   border-width: 3px;
 }
 
@@ -276,5 +281,14 @@ h2 {
   }
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+  #heading {
+    font-size: 2rem;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .hero h1{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
   }
 }
