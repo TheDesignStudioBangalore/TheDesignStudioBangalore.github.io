@@ -24,6 +24,7 @@ function sendMail() {
     .send("service_ec4lokb", "template_vabsswm", parms)
     .then(function () {
       alert("We have received your email, lets goo!!");
+      document.getElementById("contact-form").reset();
     })
     .catch(function (err) {
       alert("Email failed to send. Please try again after 4 mins :)))");

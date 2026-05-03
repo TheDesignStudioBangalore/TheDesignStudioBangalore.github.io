@@ -25,7 +25,10 @@ const openBtns = document.querySelectorAll(".open-modal");
 
 // Loop through every "Read More" button
 openBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (e) => {
+    if (e.target.classList.contains("disabled-btn")) {
+      return; // Do nothing if the button is disabled
+    }
     // 1. Get the ID of the content we want
     const contentId = btn.getAttribute("data-target");
     const sourceContent = document.getElementById(contentId);

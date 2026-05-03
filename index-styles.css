@@ -399,7 +399,7 @@ html {
 }
 .blog__grid {
   display: flex;
-
+  align-items: flex-start;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -408,13 +408,16 @@ html {
 }
 .blog__container h1 {
   text-align: center;
-  
+
   padding-bottom: 50px;
   color: #fff;
 }
 
 .blog__card {
   min-width: 500px;
+  max-width: 500px;
+  height: 300px;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #fff;
@@ -426,6 +429,31 @@ html {
   border-width: 2px;
   scroll-snap-align: center;
 }
+
+.coming-soon-banner {
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+
+  background-color: #f77062;
+  padding: 10px;
+  width: 100%;
+}
+.coming-soon .blog__img,
+.coming-soon .blog__text {
+  filter: blur(1px) grayscale(50%);
+  opacity: 0.6;
+}
+
+.blog__text p {
+  /* THE TRUNCATION MAGIC */
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Limit to exactly 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* The Image Container */
 .blog__img {
   grid-row: 1 / 2; /* Put it in the first row */
@@ -489,7 +517,16 @@ html {
 .blog1-h3 {
   padding: 20px;
 }
+/* Style for the disabled button */
+.disabled-btn {
+  background-color: #878181 !important; /* Greyed out */
+  cursor: not-allowed !important;
+  opacity: 0.6;
+}
 
+.disabled-btn:hover {
+  background-color: #878181 !important; /* Prevent hover color change */
+}
 /*mobile-responsive*/
 
 @media screen and (max-width: 768px) {
@@ -552,7 +589,9 @@ html {
     border-radius: 10px;
   }
   .blog__card {
+    position: relative;
     min-width: 300px;
+    height: 400px;
     display: grid;
     grid-template-columns: 1fr;
     background: #fff;
@@ -564,14 +603,20 @@ html {
     border-width: 2px;
     scroll-snap-align: center;
   }
+
   .blog__text h2 {
-    font-size: 1.2rem; /* Shrink the title slightly */
+    font-size: 1rem; /* Shrink the title slightly */
     margin-bottom: 10px;
   }
 
   .blog__text p {
     font-size: 0.9rem; /* Smaller font for the description */
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limit to exactly 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .blog__img img {
