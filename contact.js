@@ -23,7 +23,7 @@ function sendMail() {
   emailjs
     .send("service_ec4lokb", "template_vabsswm", parms)
     .then(function () {
-      alert("We have received your email, lets goo!!");
+      alert("We have received your email, let's goo!!");
       document.getElementById("contact-form").reset();
     })
     .catch(function (err) {
