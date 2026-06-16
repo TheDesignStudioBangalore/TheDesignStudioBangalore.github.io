@@ -455,6 +455,7 @@ padding-top: 50px;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  color:#111111
 }
 
 /* The Image Container */
