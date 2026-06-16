@@ -90,7 +90,7 @@ html {
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #f77062;
+  background: #F50057;
   color: #fff;
 }
 
@@ -100,12 +100,12 @@ html {
 }
 
 .navbar__links:hover {
-  color: #f77062;
+  color: #F50057;
   transition: all 0.3s ease;
 }
 
 .navbar__links:active {
-  color: #f77062;
+  color: #F50057;
 }
 
 .main__content p {
@@ -302,6 +302,9 @@ html {
   object-fit: contain;
   width: 100%;
 }
+p{
+  color: #f2f2f2;
+}
 
 /*Services Section*/
 
@@ -408,7 +411,7 @@ html {
 }
 .blog__container h1 {
   text-align: center;
-
+padding-top: 50px;
   padding-bottom: 50px;
   color: #fff;
 }
@@ -435,7 +438,7 @@ html {
   color: #fff;
   font-weight: 500;
 
-  background-color: #f77062;
+  background-color: #F50057;
   padding: 10px;
   width: 100%;
 }
@@ -471,7 +474,7 @@ html {
 .open-modal {
   margin-top: 10px;
   padding: 4px 7px;
-  background-color: #f77062;
+  background-color: #F50057;
   color: #fff;
 }
 .open-modal:hover {
@@ -635,13 +638,13 @@ html {
   /* Line 454: Add padding & adjust typography inside the modal for mobile */
   /* --- Unified Modal Mobile Fixes (Applies from 0px up to 768px) --- */
   .modal__content {
-    width: 92% !important;   /* Keeps the modal wide and readable on all mobile frames */
+    width: 92% !important; /* Keeps the modal wide and readable on all mobile frames */
     margin: 8% auto;
-    padding: 24px 16px;      /* Drops top/bottom padding slightly, keeps sides breathable */
+    padding: 24px 16px; /* Drops top/bottom padding slightly, keeps sides breathable */
   }
 
   .blog-insights-row {
-    flex-direction: column;  /* Prevents side-by-side squishing entirely */
+    flex-direction: column; /* Prevents side-by-side squishing entirely */
     gap: 12px;
     padding: 0 12px;
   }
@@ -658,12 +661,12 @@ html {
     padding: 15px 12px 6px !important;
   }
 
-  .modal__content p, 
-  .modal__content ol, 
+  .modal__content p,
+  .modal__content ol,
   .modal__content ul {
     font-size: 0.95rem;
     line-height: 1.5;
-    padding: 8px 12px;       /* Adds your requested breathing space on the left/right sides */
+    padding: 8px 12px; /* Adds your requested breathing space on the left/right sides */
   }
 }
 
@@ -718,21 +721,19 @@ html {
     height: auto;
     border-radius: 10px;
   }
-  
-  
-  
+
   .modal__content h2 {
     font-size: 1.4rem;
     padding: 0 10px;
   }
-  
+
   .blog1-h3 {
     font-size: 1.15rem;
     padding: 10px 10px 5px !important;
   }
 
-  .modal__content p, 
-  .modal__content ol, 
+  .modal__content p,
+  .modal__content ol,
   .modal__content ul {
     font-size: 0.9rem;
     padding: 8px 10px;
@@ -740,5 +741,163 @@ html {
 
   .blog-insights-row {
     padding: 0 10px;
+  }
+}
+.free-audits {
+  background: #111111;
+  padding: 80px 20px;
+  margin: 0;
+  color: #999;
+}
+
+.free-audits__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.free-audits h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.audits-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.audits-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+}
+
+.audits-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.audits-left h3 {
+  font-size: 1.2rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #f2f2f2;
+}
+
+.audit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.audit-list li {
+  padding: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  color: #555;
+  line-height: 1.6;
+}
+
+.audit-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.audit-btn {
+  display: inline-block;
+  background: #222;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.audit-btn:hover {
+  background: #555;
+  transform: translateY(-2px);
+}
+
+.audit-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.audit-card.highlight {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.audit-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.audit-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.audit-timeline {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.audit-timeline h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.audit-timeline p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .audits-content {
+    grid-template-columns: 1fr;
+  }
+
+  .free-audits h1 {
+    font-size: 1.8rem;
+  }
+
+  .audits-left h2 {
+    font-size: 1.4rem;
   }
 }
