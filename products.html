@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - The Design Studio</title>
+    <link rel="stylesheet" href="index-styles.css" />
+    <link rel="stylesheet" href="products-styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">TPD</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="products.html" class="navbar__links">Products</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links"> About </a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/contact.html" class="button">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Products Section -->
+    <div class="products__container">
+      <div class="products__content">
+        <h1>Free Heuristics Evaluation Template</h1>
+        <p>
+          Get a ready-to-use Notion template for conducting UX audits using
+          Nielsen's 10 Usability Heuristics.
+        </p>
+
+        <div class="template-offer">
+          <h2>What's Inside?</h2>
+          <ul class="template-list">
+            <li>10 Nielsen Heuristics checklist</li>
+            <li>Severity rating scale (cosmetic to critical)</li>
+
+            <li>Ready to duplicate and customize</li>
+          </ul>
+
+          <form id="template-form" class="template-form">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+              class="email-input"
+            />
+            <button type="submit" class="send-btn">Send Me the Template</button>
+          </form>
+
+          <p id="form-message" class="form-message"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer (copy from index.html) -->
+    <footer>
+      <div class="footer__container">
+        <p>&copy; 2026 The Design Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"
+    ></script>
+    <script src="products.js"></script>
+  </body>
+</html>
