@@ -1,5 +1,5 @@
 // Initialize EmailJS (replace YOUR_PUBLIC_KEY with your actual key)
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("2WXJnoGdo93sd7bU2");
 
 document
   .getElementById("template-form")
@@ -17,13 +17,13 @@ document
     // Email 1: Send to user
     emailjs
       .send("service_ec4lokb", "template_9ymm6ci", {
-        to_email: userEmail,
+        email: userEmail,
       })
       .then(function (response) {
         console.log("Email to user sent:", response);
 
         // Email 2: Send to yourself
-        return emailjs.send("YOUR_SERVICE_ID", "YOUR_ADMIN_TEMPLATE_ID", {
+        return emailjs.send("service_ec4lokb", "template_9ymm6ci", {
           user_email: userEmail,
           message: "New template download request",
         });
