@@ -14,32 +14,29 @@ document
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
 
+    const serviceID = "service_ec4lokb";
+    const templateID = "template_9ymm6ci";
+
     // Email 1: Send to user
     emailjs
-      .send("service_ec4lokb", "template_9ymm6ci", {
-        email: userEmail,
+      .send(serviceID, templateID, {
+        email: userEmail, 
       })
       .then(function (response) {
-        console.log("Email to user sent:", response);
+        console.log("SUCCESS!", response.status, response.text);
 
-        // Email 2: Send to yourself
-        return emailjs.send("service_ec4lokb", "template_9ymm6ci", {
-          user_email: userEmail,
-          message: "New template download request",
-        });
-      })
-      .then(function (response) {
-        console.log("Admin email sent:", response);
         messageElement.textContent = "Check your email! Template link sent.";
         messageElement.classList.add("success");
         document.getElementById("template-form").reset();
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Send Me the Template";
       })
       .catch(function (error) {
-        console.log("Error:", error);
+        console.error("FAILED...", error);
+
         messageElement.textContent = "Something went wrong. Please try again.";
         messageElement.classList.add("error");
+      })
+      .finally(function () {
+        // Re-enable button state regardless of success/error
         submitBtn.disabled = false;
         submitBtn.textContent = "Send Me the Template";
       });
